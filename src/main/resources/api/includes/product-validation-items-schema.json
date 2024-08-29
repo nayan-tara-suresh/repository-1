@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "totalNumberOfItems": {
+            "description": "Total number of items for the current search in database",
+            "type": "integer"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "details": {
+                        "type": "string",
+                        "description": "The validation details.",
+                        "maxLength": 32768
+                    },
+
+                    "status": {
+                        "type": "string",
+                        "description": "The validation status/result",
+                        "enum": [
+                            "OK",
+                            "PENDING",
+                            "ERROR"
+                        ]
+                    },
+
+                    "statusSince": {
+                        "type": "string",
+                        "maxLength": 22
+                    },
+
+                    "productSequenceNumber": {
+                        "type": "integer",
+                        "description": "USIM"
+                    },
+
+                    "productName": {
+                        "type": "string",
+                        "description": "Style/Product name",
+                        "maxLength": 70
+                    },
+
+                    "productHierarchyInternalName": {
+                        "type": "string",
+                        "maxLength": 40
+                    },
+
+                    "classification": {
+                        "type": "integer",
+                        "description": "Classification of the Product"
+                    },
+
+                    "creationUser": {
+                        "type": "string",
+                        "maxLength": 8
+                    },
+
+                    "updateUser": {
+                        "type": "string",
+                        "maxLength": 8
+                    },
+
+                    "created": {
+                        "type": "string",
+                        "maxLength": 22
+                    },
+
+                    "updated": {
+                        "type": "string",
+                        "maxLength": 22
+                    }
+                }
+            }
+        }
+    }
+}

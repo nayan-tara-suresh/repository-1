@@ -1,0 +1,59 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"description": "Contains the attributes for determining invalid products.",
+	"type": "object",
+	"properties": {
+
+		"productSequenceNumbers": {
+			"type": "array",
+			"description": "An array of productSequenceNumbers",
+			"items": {
+				"description": "the primary key of a product",
+				"type": "integer"
+			}
+		},
+		"classificationNumbers": {
+			"type": "array",
+			"description": "An array of classificationNumbers",
+			"items": {
+				"description": "The classification number.",
+				"type": "integer"
+			}
+		},
+		"productHierarchyNames": {
+			"type": "array",
+			"description": "An array of productHierarchyNames",
+			"items": {
+				"description": "The product hierarchy name",
+				"type": "string"
+			}
+		},
+		"userIds": {
+			"type": "array",
+			"description": "An array of userIds",
+			"items": {
+				"description": "The user id.",
+				"type": "string"
+			}
+		},
+		"includeOk": {
+			"description": "show also non errornous validation results",
+			"type": "boolean"
+		},
+
+
+		"maxQuantity": {
+			"description": "The maximum quantity of instances to be searched for and returned.",
+			"type": "integer"
+		}
+	},
+
+    "required": [
+        "productSequenceNumbers",
+ 		"classificationNumbers",
+		"productHierarchyNames",
+		"userIds",
+		"includeOk",
+		"maxQuantity"
+	]
+}

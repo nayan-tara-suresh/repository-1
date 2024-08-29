@@ -1,0 +1,22 @@
+{
+	"productSequenceNumbers": [
+		2000585,
+		2004545
+	],
+	"classificationNumbers": [
+		121,
+		434,
+		765
+	],
+	"productHierarchyNames": [
+		"caBlazer",
+		"caShirt"
+	],
+	"userIds": [
+		"DT83",
+		"RT43",
+		"DT64"
+	],
+	"includeOk": false,
+	"maxQuantity": 888
+}
